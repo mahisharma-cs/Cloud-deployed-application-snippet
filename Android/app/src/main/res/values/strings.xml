@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DK Mart</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="signup">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="logout">logout</string>
+    <string name="verify_account">Verify account</string>
+    <string name="string_verify_account">Verify Account</string>
+    <string name="otp_check_email">otp (check email)</string>
+    <string name="verify">Verify</string>
+    <string name="cart">Cart</string>
+    <string name="home">Home</string>
+    <string name="place_order">Place order</string>
+    <string name="pay_on_delivery">Pay on delivery</string>
+    <string name="prepaid_payment">UPI payment</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="order_summary">Order summary</string>
+    <string name="noitemincart">Hey, it\'s so light!\nThere is nothing in your cart.\n\n Go back and order some items.</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_address">Change Delivery Address</string>
+    <string name="track_order">Track Orders</string>
+    <string name="dk_mart_location">DK Mart Office</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+    <string name="sign_out">Sign out</string>
+    <string name="offers_available">Offers Available</string>
+    <string name="click_offer_apply">* Click an offer to apply</string>
+    <string name="no_internet">No Internet</string>
+    <string name="retry">Retry</string>
+</resources>
