@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cart"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_icon_black" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/tv_profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:padding="5dp"
+        android:text="user email address"
+        android:textAllCaps="false"
+        android:textColor="#404040"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_name" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/square_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_username">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frame_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_lock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/change_password"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_change_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/change_address"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_track_order"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_track" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/track_order"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_shop_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_office_location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/dk_mart_location"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_about" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/about"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_contact" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/contact"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/background_cart" />
+
+            <FrameLayout
+                android:id="@+id/frame_signout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/square_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/icon_sign_out" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:padding="5dp"
+                        android:text="@string/sign_out"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

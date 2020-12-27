@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cart"
+    tools:context=".SearchActivity">
+
+    <FrameLayout
+        android:id="@+id/search_fl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search_img_menu"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                app:srcCompat="@drawable/icon_menu_bar" />
+
+            <TextView
+                android:id="@+id/search_tv_dkmart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="8sp"
+                android:text="DK Mart"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/search_img_search"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                app:srcCompat="@drawable/icon_search" />
+
+            <FrameLayout
+                android:id="@+id/search_fl_cart_home_icon"
+                android:layout_width="70sp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="14sp"
+                        app:srcCompat="@drawable/ic_cart_white_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_main_notify_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:id="@+id/search_fl_cart_count"
+                        android:layout_width="20sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@drawable/round_cart_notify">
+
+                        <TextView
+                            android:id="@+id/search_tv_cart_notify_welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_fl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_input"
+                android:fontFamily="@font/ubuntu_medium"
+                android:hint="Search products here..."
+                android:padding="10sp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="242dp" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="10sp"
+                android:text="Search"
+                android:textColor="#ffffff"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="345dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

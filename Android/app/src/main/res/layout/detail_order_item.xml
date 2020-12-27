@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20sp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_deliveryaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="@string/delivery_address"
+             />
+
+		<TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:fontFamily="@font/ubuntu_medium"
+			android:padding="5dp"
+			android:textSize="15dp"
+            android:text="9876543210" />
+
+        <TextView
+            android:id="@+id/tv_address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:fontFamily="@font/ubuntu_medium"
+			android:padding="5dp"
+			android:textSize="15dp"
+            android:text="00 House number" />
+
+        <TextView
+            android:id="@+id/tv_address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:fontFamily="@font/ubuntu_medium"
+			android:padding="5dp"
+			android:textSize="15dp"
+            android:text="Colony" />
+
+        <LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_district"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="City" />
+
+			<TextView
+				android:id="@+id/tv_state"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="State" />
+
+			<TextView
+				android:id="@+id/tv_pin"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="123456" />
+
+		</LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_orderdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="Order Details" />
+
+        <FrameLayout
+            android:layout_width="145dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_image_frame"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image_detail_product"
+                android:layout_width="145dp"
+                android:layout_height="90dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+				
+        </FrameLayout>
+
+		<TextView
+			android:id="@+id/tv_detail_product"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/ubuntu_medium"
+			android:padding="5dp"
+			android:textSize="15dp"
+			android:text="Product Name" />
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_detail_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="id : DK10000" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/tv_detail_pack"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:fontFamily="@font/ubuntu_medium"
+					android:padding="5dp"
+					android:textSize="15dp"
+					android:text="1 pack" />
+
+				<TextView
+					android:id="@+id/tv_detail_quantity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:fontFamily="@font/ubuntu_medium"
+					android:padding="5dp"
+					android:textSize="15dp"
+					android:text="quantity" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_detail_payment"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="Payment mode" />
+
+			<TextView
+				android:id="@+id/tv_detail_price"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:gravity="right"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="₹ 0,000/-" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_detail_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="Date" />
+
+			<TextView
+				android:id="@+id/tv_detail_time"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/ubuntu_medium"
+				android:gravity="right"
+				android:padding="5dp"
+				android:textSize="15dp"
+				android:text="Time" />
+
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/img_detail_order_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:layout_gravity="center"
+			tools:srcCompat="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

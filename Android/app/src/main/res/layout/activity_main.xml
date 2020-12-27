@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cart"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gif1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/favicon1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                app:srcCompat="@drawable/icon_menu_bar" />
+
+            <TextView
+                android:id="@+id/tv_dkmart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center_vertical"
+                android:padding="8sp"
+                android:text="DK Mart"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                app:srcCompat="@drawable/icon_search" />
+
+            <FrameLayout
+                android:id="@+id/fl_cart_home_icon"
+                android:layout_width="70sp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="14sp"
+                        app:srcCompat="@drawable/ic_cart_white_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_notify_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_cart_count"
+                        android:layout_width="20sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@drawable/round_cart_notify">
+
+                        <TextView
+                            android:id="@+id/tv_cart_notify_welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/sl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_welcome_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8dp"
+                    android:text="Categories"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    tools:layout_editor_absoluteX="155dp"
+                    tools:layout_editor_absoluteY="78dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/welcome_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

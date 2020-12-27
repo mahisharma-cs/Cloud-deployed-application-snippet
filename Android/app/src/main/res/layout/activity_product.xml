@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahi.dkmart.ProductActivity">
+
+    <FrameLayout
+        android:id="@+id/product_fl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/product_img_menu"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                app:srcCompat="@drawable/icon_menu_bar" />
+
+            <TextView
+                android:id="@+id/product_tv_dkmart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="8sp"
+                android:text="DK Mart"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/product_img_search"
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:padding="12sp"
+                app:srcCompat="@drawable/icon_search" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_fl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_product_name_pa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="10sp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_product_pa"
+                android:layout_width="220sp"
+                android:layout_height="160sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_percent_off_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/background_percent_off"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+                    android:text="% off"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_you_save_pa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#ffffff"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:gravity="right"
+                    android:padding="10sp"
+                    android:text="You save :  /-"
+                    android:textColor="#008000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="10sp"
+                android:text="@string/offers_available"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:padding="10sp"
+                android:text="@string/click_offer_apply"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/offer_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/square_frame"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qty_1_pa"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_price_1_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike_through"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8sp"
+
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_1_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offer_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/square_frame"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qty_2_pa"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_price_2_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike_through"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8sp"
+
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_2_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offer_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/square_frame"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qty_3_pa"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_price_3_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike_through"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8sp"
+
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_3_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offer_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/square_frame"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qty_4_pa"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_price_4_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike_through"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8sp"
+
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_4_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offer_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/square_frame"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qty_5_pa"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_price_5_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike_through"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="8sp"
+
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_5_pa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="10sp"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

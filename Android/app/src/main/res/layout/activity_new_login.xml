@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cart"
+    tools:context=".NewLoginActivity">
+
+    <WebView
+        android:id="@+id/web_signup"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_2"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_frame"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/logodk" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="DK Mart"
+                            android:textColor="#000000"
+                            android:textSize="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_login_1"
+                    android:layout_width="343dp"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_frame"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_login_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:gravity="center"
+                            android:text="@string/login"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/et_log_username"
+                            android:layout_width="240dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/round_input"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:hint="@string/username"
+                            android:inputType="textEmailAddress"
+                            android:padding="10sp"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/et_log_password"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_login_label" />
+
+                        <EditText
+                            android:id="@+id/et_log_password"
+                            android:layout_width="240dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/round_input"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:padding="10sp"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/et_log_username" />
+
+<!--                        <com.google.android.gms.common.SignInButton-->
+<!--                            android:id="@+id/signInButton"-->
+<!--                            android:layout_width="240dp"-->
+<!--                            android:layout_height="45dp"-->
+<!--                            app:layout_constraintBottom_toTopOf="@+id/tv_dont"-->
+<!--                            app:layout_constraintCircleRadius="25dp"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.5"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/btn_login" />-->
+
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="240dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/round_button"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:onClick="Login"
+                            android:text="@string/login"
+                            android:textColor="#ffffff"
+                            app:layout_constraintBottom_toTopOf="@+id/signInButton"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/et_log_password" />
+
+                        <TextView
+                            android:id="@+id/tv_dont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="@string/dont_have_an_account"
+                            app:layout_constraintBottom_toTopOf="@+id/tv_signup"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="@string/signup"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
